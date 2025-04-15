@@ -3,7 +3,9 @@
 **/bin-int/
 
 # Visual Studio files and folder
-# .vs/
+.vs/
+CPPStudy/
+x64/
 # **.sln
 # **.vcxproj
 # **.vcxproj.filters
