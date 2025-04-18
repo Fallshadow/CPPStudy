@@ -1,13 +1,19 @@
 workspace "CPPStudy"
+    architecture "x64"
+	targetdir "build"
+
     configurations 
 	{ 
 		"Debug", 
         "Release",
     }
 
-project "CPPStudy"
+outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+project "CPPStudy"
+    location "CPPStudy"
     kind "ConsoleApp"
+    language "C++"
 
     files 
 	{ 
