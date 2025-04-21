@@ -16,72 +16,72 @@ int main()
     // std::vector<FlatQA> allQA = flatAllQAs(modules);
     // std::mt19937 rng(static_cast<unsigned>(std::time(nullptr)));  
     while (true) { 
-        // Ò»¼¶  
-        std::cout << "\n=== C++ Ñ§Ï°ÎÊ´ðÏµÍ³ ===\n";
+        // ä¸€çº§  
+        std::cout << "\n=== C++ å­¦ä¹ é—®ç­”ç³»ç»Ÿ ===\n";
         for (size_t i = 0; i < modules.size(); ++i) {
             std::cout << (i + 1) << ". " << modules[i].name << "  ";
         }
-        // std::cout << (modules.size() + 1) << ". Ëæ»ú³éÌâ\n";
-        std::cout << "0. ÍË³ö\nÇëÑ¡ÔñÄ£¿é±àºÅ£º";
+        // std::cout << (modules.size() + 1) << ". éšæœºæŠ½é¢˜\n";
+        std::cout << "0. é€€å‡º\nè¯·é€‰æ‹©æ¨¡å—ç¼–å·ï¼š";
         int sel1 = 0;
         std::cin >> sel1;
         if (sel1 == 0) break;
 
         //if (sel1 == (int)modules.size() + 1) {
-        //    // Ëæ»ú  
-        //    if (allQA.empty()) { std::cout << "Ìâ¿âÎª¿Õ\n"; continue; }
+        //    // éšæœº  
+        //    if (allQA.empty()) { std::cout << "é¢˜åº“ä¸ºç©º\n"; continue; }
         //    auto idx = std::uniform_int_distribution<int>(0, allQA.size() - 1)(rng);
         //    const auto& q = allQA[idx];
-        //    std::cout << "\n[Ä£¿é:" << q.moduleName
-        //        << "] [×ÓÄ£¿é:" << q.subModuleName
-        //        << "] [ÖªÊ¶µã:" << q.knowledgePointName << "]\n";
-        //    std::cout << "Ìâ£º" << q.question << "\n´ð£º" << q.answer << "\n";
+        //    std::cout << "\n[æ¨¡å—:" << q.moduleName
+        //        << "] [å­æ¨¡å—:" << q.subModuleName
+        //        << "] [çŸ¥è¯†ç‚¹:" << q.knowledgePointName << "]\n";
+        //    std::cout << "é¢˜ï¼š" << q.question << "\nç­”ï¼š" << q.answer << "\n";
         //    continue;
         //}
 
-        if (sel1 < 1 || sel1 >(int)modules.size()) { std::cout << "ÎÞÐ§Ñ¡Ôñ£¡\n"; continue; }
+        if (sel1 < 1 || sel1 >(int)modules.size()) { std::cout << "æ— æ•ˆé€‰æ‹©ï¼\n"; continue; }
         const auto& module = modules[sel1 - 1];
         while (true) { 
-            // ¶þ¼¶  
-            std::cout << "\n-- [" << module.name << "] ×ÓÄ£¿é --\n";
+            // äºŒçº§  
+            std::cout << "\n-- [" << module.name << "] å­æ¨¡å— --\n";
             for (size_t i = 0; i < module.subModules.size(); ++i) {
                 std::cout << (i + 1) << ". " << module.subModules[i].name << std::endl;
             }
-            std::cout << "0. ·µ»Ø\nÇëÑ¡Ôñ×ÓÄ£¿é£º";
+            std::cout << "0. è¿”å›ž\nè¯·é€‰æ‹©å­æ¨¡å—ï¼š";
             int sel2 = 0;
             std::cin >> sel2;
             if (sel2 == 0) break;
-            if (sel2 < 1 || sel2 >(int)module.subModules.size()) { std::cout << "ÎÞÐ§£¡\n"; continue; }
+            if (sel2 < 1 || sel2 >(int)module.subModules.size()) { std::cout << "æ— æ•ˆï¼\n"; continue; }
             const auto& sub = module.subModules[sel2 - 1];
 
             while (true) { 
-                // Èý¼¶  
-                std::cout << "\n-- [" << module.name << "/" << sub.name << "] ÖªÊ¶µã --\n";
+                // ä¸‰çº§  
+                std::cout << "\n-- [" << module.name << "/" << sub.name << "] çŸ¥è¯†ç‚¹ --\n";
                 for (size_t i = 0; i < sub.knowledgePoints.size(); ++i) {
                     std::cout << (i + 1) << ". " << sub.knowledgePoints[i].name << std::endl;
                 }
-                std::cout << "0. ·µ»Ø\nÇëÑ¡ÔñÖªÊ¶µã£º";
+                std::cout << "0. è¿”å›ž\nè¯·é€‰æ‹©çŸ¥è¯†ç‚¹ï¼š";
                 int sel3 = 0;
                 std::cin >> sel3;
                 if (sel3 == 0) break;
-                if (sel3 < 1 || sel3 >(int)sub.knowledgePoints.size()) { std::cout << "ÎÞÐ§£¡\n"; continue; }
+                if (sel3 < 1 || sel3 >(int)sub.knowledgePoints.size()) { std::cout << "æ— æ•ˆï¼\n"; continue; }
                 const auto& kp = sub.knowledgePoints[sel3 - 1];
 
                 while (true) { 
-                    std::cout << "\nÖªÊ¶µã: " << kp.name << "\n";
+                    std::cout << "\nçŸ¥è¯†ç‚¹: " << kp.name << "\n";
                     for (size_t i = 0; i < kp.qas.size(); ++i){
                         std::cout << (i + 1) << ". " << kp.qas[i].question << std::endl;
                     }
-                    std::cout << "0. ·µ»Ø\nÇëÑ¡ÔñÎÊÌâ£º";
+                    std::cout << "0. è¿”å›ž\nè¯·é€‰æ‹©é—®é¢˜ï¼š";
                     int sel_q = 0;
                     std::cin >> sel_q;
                     if (sel_q == 0) break;
-                    if (sel_q < 1 || sel_q >(int)kp.qas.size()) { std::cout << "ÎÞÐ§£¡\n"; continue; }
-                    std::cout << "´ð£º" << kp.qas[sel_q - 1].answer << "\n";
+                    if (sel_q < 1 || sel_q >(int)kp.qas.size()) { std::cout << "æ— æ•ˆï¼\n"; continue; }
+                    std::cout << "ç­”ï¼š" << kp.qas[sel_q - 1].answer << "\n";
                 }
             }
         }
     }
-    std::cout << "¸ÐÐ»Ê¹ÓÃ£¬bye£¡\n";
+    std::cout << "æ„Ÿè°¢ä½¿ç”¨ï¼Œbyeï¼\n";
     return 0;
 }

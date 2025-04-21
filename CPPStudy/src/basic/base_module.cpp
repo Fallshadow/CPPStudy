@@ -3,7 +3,7 @@
 
 Module getBaseModule() {
 	Module m;
-	m.name = "»ù´¡";
+	m.name = "åŸºç¡€";
 	m.subModules = {
 		getPointModule()
 	};
