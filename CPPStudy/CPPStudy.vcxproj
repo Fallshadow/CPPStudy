@@ -89,14 +89,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="include\basic\const.h" />
-    <ClInclude Include="include\basic\pointer_quote.h" />
-    <ClInclude Include="include\basic\virtual_method.h" />
+    <ClInclude Include="include\basic\virtual_method_module.h" />
+    <ClInclude Include="include\module.h" />
+    <ClInclude Include="include\qa_struct.h" />
     <ClInclude Include="src\pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\basic\const.cpp" />
-    <ClCompile Include="src\basic\pointer_quote.cpp" />
-    <ClCompile Include="src\basic\virtual_method.cpp" />
+    <ClCompile Include="include\module_sub.h" />
+    <ClCompile Include="src\basic\const_submodule.cpp" />
+    <ClCompile Include="src\basic\base_module.cpp" />
+    <ClCompile Include="src\basic\pointer_submodule.cpp" />
+    <ClCompile Include="src\basic\virtual_method_module.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\pch.cpp" />
   </ItemGroup>

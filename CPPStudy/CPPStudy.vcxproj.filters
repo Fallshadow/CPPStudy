@@ -18,24 +18,20 @@
     <ClInclude Include="include\basic\const.h">
       <Filter>include\basic</Filter>
     </ClInclude>
-    <ClInclude Include="include\basic\pointer_quote.h">
-      <Filter>include\basic</Filter>
-    </ClInclude>
-    <ClInclude Include="include\basic\virtual_method.h">
+    <ClInclude Include="include\basic\virtual_method_module.h">
       <Filter>include\basic</Filter>
     </ClInclude>
     <ClInclude Include="src\pch.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="include\qa_struct.h" />
+    <ClInclude Include="include\module.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\basic\const.cpp">
+    <ClCompile Include="src\basic\const_submodule.cpp">
       <Filter>src\basic</Filter>
     </ClCompile>
-    <ClCompile Include="src\basic\pointer_quote.cpp">
-      <Filter>src\basic</Filter>
-    </ClCompile>
-    <ClCompile Include="src\basic\virtual_method.cpp">
+    <ClCompile Include="src\basic\virtual_method_module.cpp">
       <Filter>src\basic</Filter>
     </ClCompile>
     <ClCompile Include="src\main.cpp">
@@ -44,5 +40,8 @@
     <ClCompile Include="src\pch.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\basic\base_module.cpp" />
+    <ClCompile Include="include\module_sub.h" />
+    <ClCompile Include="src\basic\pointer_submodule.cpp" />
   </ItemGroup>
 </Project>
