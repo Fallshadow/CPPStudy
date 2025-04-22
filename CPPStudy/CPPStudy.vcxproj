@@ -90,21 +90,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="include\basic\const_submodule.h" />
-    <ClInclude Include="include\basic\memory_submodule.h" />
-    <ClInclude Include="include\basic\pointer_submodule.h" />
-    <ClInclude Include="include\basic\virtual_method_submodule.h" />
+    <ClInclude Include="include\basic_module_sub\basic_module_sub.h" />
+    <ClInclude Include="include\basic_module_sub\const_submodule.h" />
+    <ClInclude Include="include\basic_module_sub\memory_submodule.h" />
+    <ClInclude Include="include\basic_module_sub\pointer_submodule.h" />
+    <ClInclude Include="include\basic_module_sub\virtual_method_submodule.h" />
+    <ClInclude Include="include\class_module_sub\class_module_sub.h" />
+    <ClInclude Include="include\class_module_sub\statement_submodule.h" />
     <ClInclude Include="include\module.h" />
-    <ClInclude Include="include\module_sub.h" />
     <ClInclude Include="include\qa_struct.h" />
     <ClInclude Include="src\pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\basic\base_module.cpp" />
-    <ClCompile Include="src\basic\const_submodule.cpp" />
-    <ClCompile Include="src\basic\memory_submodule.cpp" />
-    <ClCompile Include="src\basic\pointer_submodule.cpp" />
-    <ClCompile Include="src\basic\virtual_method_submodule.cpp" />
+    <ClCompile Include="src\basic_module\base_module.cpp" />
+    <ClCompile Include="src\basic_module\const_submodule.cpp" />
+    <ClCompile Include="src\basic_module\memory_submodule.cpp" />
+    <ClCompile Include="src\basic_module\pointer_submodule.cpp" />
+    <ClCompile Include="src\basic_module\virtual_method_submodule.cpp" />
+    <ClCompile Include="src\class_module\class_module.cpp" />
+    <ClCompile Include="src\class_module\statement_submodule.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\pch.cpp" />
   </ItemGroup>

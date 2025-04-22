@@ -1,9 +1,10 @@
 #include <iostream> 
 
-#include "module_sub.h"
-#include "basic/memory_submodule.h"
+#include "basic_module_sub/basic_module_sub.h"
+#include "basic_module_sub/memory_submodule.h"
 
 SubModule getMemoryModule() {
+
 	QA qa11 = {
 "请介绍一下 C++ 内存分配方式",
 R"(

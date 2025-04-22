@@ -4,33 +4,42 @@
     <Filter Include="include">
       <UniqueIdentifier>{89AF369E-F58E-B539-FEA6-40106A051C9B}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\basic">
-      <UniqueIdentifier>{1A71EFA4-8631-6BDB-4F6C-B458BBEBAFB7}</UniqueIdentifier>
+    <Filter Include="include\basic_module_sub">
+      <UniqueIdentifier>{0826B6E9-F44A-056A-1D96-EAF9091A0488}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\class_module_sub">
+      <UniqueIdentifier>{FC2A65F8-E84F-B478-119B-9908FD1EB396}</UniqueIdentifier>
     </Filter>
     <Filter Include="src">
       <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\basic">
-      <UniqueIdentifier>{BE97E0B4-2A02-952B-7340-46D1DFE97280}</UniqueIdentifier>
+    <Filter Include="src\basic_module">
+      <UniqueIdentifier>{03047D3D-EFFC-9B8F-182F-811404877B9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\class_module">
+      <UniqueIdentifier>{F7AEA731-E3A7-C683-0CDA-AB08F831A68F}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\basic\const_submodule.h">
-      <Filter>include\basic</Filter>
+    <ClInclude Include="include\basic_module_sub\basic_module_sub.h">
+      <Filter>include\basic_module_sub</Filter>
     </ClInclude>
-    <ClInclude Include="include\basic\memory_submodule.h">
-      <Filter>include\basic</Filter>
+    <ClInclude Include="include\basic_module_sub\const_submodule.h">
+      <Filter>include\basic_module_sub</Filter>
     </ClInclude>
-    <ClInclude Include="include\basic\pointer_submodule.h">
-      <Filter>include\basic</Filter>
+    <ClInclude Include="include\basic_module_sub\memory_submodule.h">
+      <Filter>include\basic_module_sub</Filter>
     </ClInclude>
-    <ClInclude Include="include\basic\virtual_method_submodule.h">
-      <Filter>include\basic</Filter>
+    <ClInclude Include="include\basic_module_sub\pointer_submodule.h">
+      <Filter>include\basic_module_sub</Filter>
+    </ClInclude>
+    <ClInclude Include="include\basic_module_sub\virtual_method_submodule.h">
+      <Filter>include\basic_module_sub</Filter>
+    </ClInclude>
+    <ClInclude Include="include\class_module_sub\class_module_sub.h">
+      <Filter>include\class_module_sub</Filter>
     </ClInclude>
     <ClInclude Include="include\module.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\module_sub.h">
       <Filter>include</Filter>
     </ClInclude>
     <ClInclude Include="include\qa_struct.h">
@@ -41,20 +50,23 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\basic\base_module.cpp">
-      <Filter>src\basic</Filter>
+    <ClCompile Include="src\basic_module\base_module.cpp">
+      <Filter>src\basic_module</Filter>
     </ClCompile>
-    <ClCompile Include="src\basic\const_submodule.cpp">
-      <Filter>src\basic</Filter>
+    <ClCompile Include="src\basic_module\const_submodule.cpp">
+      <Filter>src\basic_module</Filter>
     </ClCompile>
-    <ClCompile Include="src\basic\memory_submodule.cpp">
-      <Filter>src\basic</Filter>
+    <ClCompile Include="src\basic_module\memory_submodule.cpp">
+      <Filter>src\basic_module</Filter>
     </ClCompile>
-    <ClCompile Include="src\basic\pointer_submodule.cpp">
-      <Filter>src\basic</Filter>
+    <ClCompile Include="src\basic_module\pointer_submodule.cpp">
+      <Filter>src\basic_module</Filter>
     </ClCompile>
-    <ClCompile Include="src\basic\virtual_method_submodule.cpp">
-      <Filter>src\basic</Filter>
+    <ClCompile Include="src\basic_module\virtual_method_submodule.cpp">
+      <Filter>src\basic_module</Filter>
+    </ClCompile>
+    <ClCompile Include="src\class_module\class_module.cpp">
+      <Filter>src\class_module</Filter>
     </ClCompile>
     <ClCompile Include="src\main.cpp">
       <Filter>src</Filter>

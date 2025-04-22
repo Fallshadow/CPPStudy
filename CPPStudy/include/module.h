@@ -2,4 +2,4 @@
 #include "qa_struct.h"
 
 Module getBaseModule();
-// Module getAlgorithmModule();
+Module getClassModule();

@@ -11,6 +11,7 @@ int main()
 {
     std::vector<Module> modules = {
         getBaseModule(),
+        getClassModule(),
     };
 
     // std::vector<FlatQA> allQA = flatAllQAs(modules);

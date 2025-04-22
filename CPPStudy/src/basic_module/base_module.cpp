@@ -1,5 +1,5 @@
 ﻿#include "module.h"
-#include "module_sub.h"
+#include "basic_module_sub//basic_module_sub.h"
 
 Module getBaseModule() {
 	Module m;
