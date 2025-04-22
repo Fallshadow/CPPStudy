@@ -31,9 +31,11 @@ project "CPPStudy"
     }
 
     filter "configurations:Debug"
+        cppdialect "C++17"
         defines "STUDY_DEBUG"
         symbols "On"
                 
     filter "configurations:Release"
+        cppdialect "C++17"
         defines "STUDY_RELEASE"
         optimize "On"

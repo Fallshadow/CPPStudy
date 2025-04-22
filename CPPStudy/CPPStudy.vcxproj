@@ -61,6 +61,7 @@
       <AdditionalIncludeDirectories>include;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
+      <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
     <Link>
@@ -79,6 +80,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
     <Link>
@@ -88,9 +90,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="include\basic\const.h" />
+    <ClInclude Include="include\basic\const_submodule.h" />
+    <ClInclude Include="include\basic\memory_submodule.h" />
     <ClInclude Include="include\basic\pointer_submodule.h" />
-    <ClInclude Include="include\basic\virtual_method_module.h" />
+    <ClInclude Include="include\basic\virtual_method_submodule.h" />
     <ClInclude Include="include\module.h" />
     <ClInclude Include="include\module_sub.h" />
     <ClInclude Include="include\qa_struct.h" />
@@ -99,8 +102,9 @@
   <ItemGroup>
     <ClCompile Include="src\basic\base_module.cpp" />
     <ClCompile Include="src\basic\const_submodule.cpp" />
+    <ClCompile Include="src\basic\memory_submodule.cpp" />
     <ClCompile Include="src\basic\pointer_submodule.cpp" />
-    <ClCompile Include="src\basic\virtual_method_module.cpp" />
+    <ClCompile Include="src\basic\virtual_method_submodule.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\pch.cpp" />
   </ItemGroup>

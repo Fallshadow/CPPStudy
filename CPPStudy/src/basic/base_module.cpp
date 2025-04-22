@@ -5,7 +5,8 @@ Module getBaseModule() {
 	Module m;
 	m.name = "基础";
 	m.subModules = {
-		getPointModule()
+		getPointModule(),
+		getMemoryModule(),
 	};
 	return m;
 }

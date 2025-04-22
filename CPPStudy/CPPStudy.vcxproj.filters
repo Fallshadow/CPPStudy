@@ -15,13 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\basic\const.h">
+    <ClInclude Include="include\basic\const_submodule.h">
+      <Filter>include\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\basic\memory_submodule.h">
       <Filter>include\basic</Filter>
     </ClInclude>
     <ClInclude Include="include\basic\pointer_submodule.h">
       <Filter>include\basic</Filter>
     </ClInclude>
-    <ClInclude Include="include\basic\virtual_method_module.h">
+    <ClInclude Include="include\basic\virtual_method_submodule.h">
       <Filter>include\basic</Filter>
     </ClInclude>
     <ClInclude Include="include\module.h">
@@ -44,10 +47,13 @@
     <ClCompile Include="src\basic\const_submodule.cpp">
       <Filter>src\basic</Filter>
     </ClCompile>
+    <ClCompile Include="src\basic\memory_submodule.cpp">
+      <Filter>src\basic</Filter>
+    </ClCompile>
     <ClCompile Include="src\basic\pointer_submodule.cpp">
       <Filter>src\basic</Filter>
     </ClCompile>
-    <ClCompile Include="src\basic\virtual_method_module.cpp">
+    <ClCompile Include="src\basic\virtual_method_submodule.cpp">
       <Filter>src\basic</Filter>
     </ClCompile>
     <ClCompile Include="src\main.cpp">

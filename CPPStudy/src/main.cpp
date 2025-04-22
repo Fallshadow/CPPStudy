@@ -10,7 +10,7 @@
 int main()
 {
     std::vector<Module> modules = {
-        getBaseModule()
+        getBaseModule(),
     };
 
     // std::vector<FlatQA> allQA = flatAllQAs(modules);
@@ -78,6 +78,9 @@ int main()
                     if (sel_q == 0) break;
                     if (sel_q < 1 || sel_q >(int)kp.qas.size()) { std::cout << "无效！\n"; continue; }
                     std::cout << "答：" << kp.qas[sel_q - 1].answer << "\n";
+                    if (kp.qas[sel_q - 1].demo) {
+                        kp.qas[sel_q - 1].demo();
+                    }
                 }
             }
         }

@@ -1,10 +1,12 @@
 #pragma once
 #include <string>
 #include <vector>
+#include <functional>
 
 struct QA {
 	std::string question;
 	std::string answer;
+	std::function<void()> demo;
 };
 
 struct KnowledgePoint {
